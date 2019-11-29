@@ -1,0 +1,24 @@
+{
+  "name": "RoboNodeJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_PATH=./core/;./core/Router/;./project/classes/; && nodemon index.js && node --max-old-space-size=8192 index.js",
+    "unix_start": "set NODE_PATH=./core/:./core/Router/:./project/classes/: && nodemon index.js && node --max-old-space-size=8192 index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "generate-password": "^1.4.2",
+    "urldecode": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  },
+  "nodemonConfig": {
+    "ignore": [],
+    "delay": "1500"
+  }
+}
